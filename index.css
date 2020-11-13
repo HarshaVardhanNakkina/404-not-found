@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--Inconsolata: 'Inconsolata', monospace;
+	--Montserrat: 'Montserrat', sans-serif;
+	--SpaceMono: 'Space Mono', monospace;
+	--white: #ffffff;
+	--gray1: #333333;
+	--gray2: #4f4f4f;
+}
+
+body {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page-heading {
+	position: absolute;
+	left: 77px;
+	top: 40px;
+
+	font-family: var(--Inconsolata);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	text-transform: uppercase;
+	color: var(--gray1);
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 8rem 0;
+}
+
+.content {
+	max-width: 586px;
+}
+
+.scarecrow {
+	width: 539.2236938476562px;
+}
+
+.content__title {
+	color: var(--gray1);
+	font-family: var(--SpaceMono);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 95px;
+	letter-spacing: -0.035em;
+}
+
+.content__description {
+	margin-top: 36px;
+	margin-bottom: 64px;
+	max-width: 381px;
+	font-family: var(--SpaceMono);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: -0.035em;
+	color: var(--gray2);
+}
+
+.go-to-home {
+	font-family: var(--SpaceMono);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.035em;
+	text-transform: uppercase;
+	background: var(--gray1);
+	color: var(--white);
+	border: none;
+	padding: 1.5rem 2rem;
+	cursor: pointer;
+}
+.attribution {
+	position: absolute;
+	bottom: 1rem;
+	font-family: var(--Montserrat);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--gray1);
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		height: auto;
+	}
+	.page-heading {
+		left: 24px;
+		top: 20px;
+	}
+
+	.main {
+		flex-direction: column;
+		padding: 0 1rem;
+	}
+	.scarecrow {
+		width: 286.829833984375px;
+	}
+	.content {
+		margin-top: 4rem;
+	}
+	.content__title {
+		font-size: 48px;
+		line-height: 71px;
+		letter-spacing: -0.035em;
+	}
+	.content__description {
+		font-size: 18px;
+		line-height: 27px;
+		letter-spacing: -0.035em;
+	}
+}
